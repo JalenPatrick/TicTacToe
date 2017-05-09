@@ -1,0 +1,165 @@
+body {
+  margin: 0 auto;
+  text-align: center;
+  background-color: #717377;
+}
+
+.title {
+  text-align: center;
+  font-family: Bitter;
+  font-size: 75px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  color: #0f0f0f;
+  text-shadow: 0 0 3px white;
+}
+
+.newGame, .resetScore {
+  margin: 0 auto;
+  text-align: center;
+  font-family: Bitter;
+  font-size: 15px;
+  border-style: outset;
+  border-top-left-radius: 20%;
+  border-bottom-right-radius: 20%;
+  width: 150px;
+  margin-bottom: 10px;
+  background-color: white;
+}
+
+.newGame:hover, .resetScore:hover {
+  border-color: red;
+}
+
+.currentPlayer {
+  margin: 0 auto;
+  text-align: center;
+  font-family: Bitter;
+  font-size: 35px;
+  padding-bottom: 2px;
+  margin-bottom: 10px;
+  width: 350px;
+  border: 1px solid black;
+  background-color: #dedfe2;
+}
+
+.table {
+  margin: 0 auto;
+  display: table;
+  border: 3px solid;
+  background-color: #dedfe2;
+}
+
+.row {
+  display: table-row;
+
+}
+
+.cell {
+  width: 150px;
+  height: 150px;
+  display: table-cell;
+  border: 3px solid;
+}
+
+.score {
+  margin: 0 auto;
+  display: table;
+  border: 3px solid;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-family: Bitter;
+  font-size: 15px;
+  background-color: #dedfe2;
+}
+
+.header {
+  display: table-row;
+  width: 200px;
+}
+
+.xScoreCell, .oScoreCell, .titleCell {
+  display: table-cell;
+  width: 100px;
+  border: 1px solid;
+  border-top: 2px solid;
+}
+
+.xScoreRow {
+  background-color: #ff7474;
+}
+
+.oScoreRow {
+  background-color: #59c3f6;
+}
+
+.redText {
+  color: #ff7474;
+}
+
+.blueText {
+  color: #59c3f6;
+}
+
+.gameResult {
+  margin: 0 auto;
+  font-family: Bitter;
+  font-size: 25px;
+  margin-top: 15px;
+  padding-bottom: 2px;
+  width: 350px;
+  border: 1px solid black;
+  background-color: #dedfe2;
+}
+
+@keyframes winFlash {
+  0% {background-color: #b5ec9b;}
+  50% {background-color: #dedfe2;}
+}
+
+.winColor {
+  background-color: #b5ec9b;
+  animation-name: winFlash;
+  animation-iteration-count: 3;
+  animation-duration: 1s;
+}
+
+.cell:hover {
+  border-color: #95ff5f;
+}
+
+@keyframes grow {
+  from {font-size: 5px;}
+  to {font-size: 100px;}
+}
+
+.X::before {
+  text-align: center;
+  vertical-align: middle;
+  line-height: 150px;
+  content: "X";
+  font-family: Merienda;
+
+  animation-name: grow;
+  animation-duration: 0.3s;
+  animation-timing-function: ease-out;
+
+  font-size: 100px;
+  color: #ff7474;
+}
+
+.O::before {
+  text-align: center;
+  vertical-align: middle;
+  line-height: 150px;
+  content: "O";
+  font-family: Merienda;
+
+  animation-name: grow;
+  animation-duration: 0.3s;
+  animation-timing-function: ease-out;
+
+  font-size: 100px;
+  color: #59c3f6;
+}

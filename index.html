@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Tic-Tac-Toe </title>
+    <!--Fonts and CSS Link -->
+    <link href="https://fonts.googleapis.com/css?family=Merienda" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!--Javascript and jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <p class="title"> TIC-TAC-TOE </p>
+
+    <div class = "newGame"> RESET GAME </div>
+
+    <div class = "currentPlayer"> </div>
+
+    <div class = "table">
+      <!--first row of the tic-tac-toe board-->
+      <div class = "row">
+        <div class = "cell" id = "T1"> </div>
+        <div class = "cell" id = "T2"> </div>
+        <div class = "cell" id = "T3"> </div>
+      </div>
+
+      <!--second row of the tic-tac-toe board-->
+      <div class = "row">
+        <div class = "cell" id = "C1"> </div>
+        <div class = "cell" id = "C2"> </div>
+        <div class = "cell" id = "C3"> </div>
+      </div>
+
+      <!--third row of the tic-tac-toe board-->
+      <div class = "row">
+        <div class = "cell" id = "B1"> </div>
+        <div class = "cell" id = "B2"> </div>
+        <div class = "cell" id = "B3"> </div>
+      </div>
+    </div>
+
+    <div class = "gameResult"> </div>
+
+    <div class = "score">
+      <div class = "header"> Scoreboard </div>
+      <div class = "titleRow">
+        <div class = "titleCell"> Player </div>
+        <div class = "titleCell"> Wins </div>
+      </div>
+
+      <div class = "xScoreRow">
+        <div class = "xScoreCell"> X </div>
+        <div class = "xScoreCell" id = "xPoints"> </div>
+      </div>
+
+      <div class = "oScoreRow">
+        <div class = "oScoreCell"> O </div>
+        <div class = "oScoreCell" id = "oPoints"> </div>
+      </div>
+    </div>
+
+    <div class = "resetScore"> RESET SCORE </div>
+  </body>
+</html>
